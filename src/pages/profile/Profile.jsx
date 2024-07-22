@@ -37,7 +37,7 @@ const Profile = () => {
     setIsLoading(true);
 
     const formData = new FormData();
-    formData.append("avatar", avatar.file || '');
+    formData.append("file", avatar.file || '');
     formData.append("name", name.value);
     formData.append("id", user._id)
 
